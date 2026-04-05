@@ -3,17 +3,38 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body,
 #root {
-  margin: 0;
-  padding: 0;
   height: 100%;
 }
 
+body {
+  background-color: var(--color-neutral-100);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 :root {
+  --cell-size: 64px;
+  --color-primary: #457b9d;
+  --color-primary-light: #a8dadc;
+  --color-primary-dark: #1d3557;
+  --color-neutral-100: #f8f9fa;
+  --color-neutral-300: #adb5bd;
+  --color-neutral-400: #868e96;
+  --color-neutral-500: #6c757d;
+  --color-neutral-600: #5c636a;
+  --color-neutral-700: #495057;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

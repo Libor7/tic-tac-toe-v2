@@ -1,5 +1,7 @@
+import GameBoard from "@/features/game/components/GameBoard";
+
 const App = () => {
-  return <></>;
+  return <GameBoard />;
 };
 
 export default App;

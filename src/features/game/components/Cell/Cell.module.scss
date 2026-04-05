@@ -1,0 +1,19 @@
+.cell {
+  align-items: center;
+  border-bottom: 3px solid var(--color-neutral-300);
+  border-right: 3px solid var(--color-neutral-300);
+  color: var(--color-neutral-400);
+  cursor: pointer;
+  font-size: 48px;
+  height: var(--cell-size);
+  justify-content: center;
+  width: var(--cell-size);
+}
+
+.lastColumn {
+  border-right: none;
+}
+
+.lastRow {
+  border-bottom: none;
+}

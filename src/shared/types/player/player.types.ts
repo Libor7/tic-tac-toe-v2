@@ -1,6 +1,6 @@
 export const Mark = {
-  X: 0,
-  O: 1,
+  CROSS: "Cross",
+  CIRCLE: "Circle",
 } as const;
 
 export type MarkType = (typeof Mark)[keyof typeof Mark];
@@ -16,4 +16,4 @@ export interface IPlayer {
   mark: MarkType;
   score: number;
   type: PlayerType;
-};
+}
