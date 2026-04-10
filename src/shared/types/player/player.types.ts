@@ -1,6 +1,6 @@
 export const Mark = {
-  CROSS: "Cross",
-  CIRCLE: "Circle",
+  CROSS: "cross",
+  CIRCLE: "circle",
 } as const;
 
 export type MarkType = (typeof Mark)[keyof typeof Mark];

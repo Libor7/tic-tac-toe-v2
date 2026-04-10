@@ -1,6 +1,6 @@
 import type { RootState } from "@/store/store";
 
-export const selectCellValue =
+export const selectCell =
   (row: number, col: number) =>
   ({ game }: RootState) =>
     game.board[row][col];

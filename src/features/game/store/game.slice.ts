@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 import type { IGameState } from "@/shared/types/game/game.types";
-import { Mark } from "@/shared/types/player/player.types";
+import { Mark, Player } from "@/shared/types/player/player.types";
 import { createBoard } from "../utils/game.utils";
 import {
   DEFAULT_COLS,
@@ -13,10 +13,22 @@ import { placeMark } from "./game.reducers";
 const initialGameState: IGameState = {
   activeMark: Mark.CROSS,
   board: createBoard(DEFAULT_ROWS, DEFAULT_COLS),
+  playersByMark: {
+    [Mark.CROSS]: {
+      mark: Mark.CROSS,
+      score: 0,
+      type: Player.HUMAN,
+    },
+    [Mark.CIRCLE]: {
+      mark: Mark.CIRCLE,
+      score: 0,
+      type: Player.HUMAN,
+    },
+  },
   settings: {
     rows: DEFAULT_ROWS,
     cols: DEFAULT_COLS,
-    lineLengthToWin: DEFAULT_WIN_LENGTH,
+    winningLineLength: DEFAULT_WIN_LENGTH,
   },
 };
 

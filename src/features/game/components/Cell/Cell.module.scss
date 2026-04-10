@@ -10,6 +10,14 @@
   width: var(--cell-size);
 }
 
+.circleWinningLine {
+  color: var(--color-primary-dark);
+}
+
+.crossWinningLine {
+  color: var(--color-secondary);
+}
+
 .lastColumn {
   border-right: none;
 }

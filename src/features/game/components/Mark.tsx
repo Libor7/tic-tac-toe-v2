@@ -4,7 +4,7 @@ import { createElement, memo } from "react";
 
 import type { CellValue } from "@/shared/types/board/board.types";
 
-const markIconMap = { Cross, Circle };
+const markIconMap = { cross: Cross, circle: Circle };
 
 type MarkProps = {
   mark: CellValue;
